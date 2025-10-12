@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3760285d6ef52f449b9a29c91736661e, type: 3}
+  m_Name: RulesPages_2_3
+  m_EditorClassIdentifier: 
+  configName: Score_2_3
+  aspectRatio: {x: 2, y: 3}
+  _minAnchor: {x: 0.02, y: 0.16}
+  _maxAnchor: {x: 0.98, y: 0.8}
