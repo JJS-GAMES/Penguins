@@ -1,6 +1,5 @@
 using UnityEditor;
 using UnityEditor.SceneManagement;
-using UnityEngine;
 using System.IO;
 
 [InitializeOnLoad]

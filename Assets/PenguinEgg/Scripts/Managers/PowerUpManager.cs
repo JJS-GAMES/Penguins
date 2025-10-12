@@ -57,6 +57,11 @@ public class PowerUpManager : Manager
         _addCombinationsButton.interactable = false;
         _dropEggButton.interactable = false;
 
+        if (GameManager.GameMode != GameMode.MultiPlayer)
+        {
+            _dropEggButton.gameObject.SetActive(false);
+        }
+
         _isInitialized = true;
     }
 
