@@ -15,6 +15,23 @@ public class MenuSceneManager : Manager
 
         [SerializeField]
         public Sprite UnmuteSprite;
+
+
+    }
+
+    [Serializable]
+    public class LanguageItem
+    {
+        [SerializeField]
+        public Button LanguageButton;
+
+        [SerializeField]
+        public Sprite RussianSprite;
+
+        [SerializeField]
+        public Sprite EnglandSprite;
+
+
     }
 
     #region Editor Variables
@@ -32,7 +49,7 @@ public class MenuSceneManager : Manager
 
     [SerializeField]
     private Button _playButton;
-    
+
     [SerializeField]
     private Button _multiPlayerButton;
 
@@ -47,6 +64,11 @@ public class MenuSceneManager : Manager
 
     [SerializeField]
     private SoundItem _sfxItem;
+
+    [SerializeField]
+    private LanguageItem _language;
+
+
 
     #endregion
 
@@ -145,6 +167,7 @@ public class MenuSceneManager : Manager
         _sfxItem.SoundButton.image.sprite = AudioManager.IsSFXMuted ? _sfxItem.MuteSprite : _sfxItem.UnmuteSprite;
     }
 
+    
     private void DisplayParameters()
     {
         if (!_parametersManager)
