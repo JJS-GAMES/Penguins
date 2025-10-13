@@ -40,6 +40,12 @@ public enum TileType
     None
 }
 
+public enum Language
+{
+    Russian,
+    England
+}
+
 public enum PowerUpType 
 {
     SwapCard = 0,

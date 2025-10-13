@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,7 +16,13 @@ public class GameManager : MonoBehaviour
     private static GameMode _gameMode;
     public static GameMode GameMode { get => _gameMode; }
 
+    private static Language _language;
+    public static Language Language { get => _language; }
+
     private static GameManager _instance;
+
+    private bool _isRussian = true;
+    public bool IsRussian { get => _isRussian; }
     public static GameManager Instance
     {
         get
@@ -45,6 +53,22 @@ public class GameManager : MonoBehaviour
             _instance = this;
             _gameMode = _gameParameters.DEFAULT_GAME_MODE;
             DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    public void ToggleLanguage()
+    {
+        _isRussian = !_isRussian;
+
+        if (_isRussian)
+        {
+            YG2.SwitchLanguage("ru");
+            _language = Language.Russian;
+        }
+        else
+        {
+            YG2.SwitchLanguage("en");
+            _language = Language.England;
         }
     }
 

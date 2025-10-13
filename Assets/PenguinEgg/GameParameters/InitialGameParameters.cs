@@ -22,10 +22,14 @@ public class InitialGameParameters : ScriptableObject
     [SerializeField]
     private int _maxCombinationLimit = 9;
     public int MAX_COMBINATION_LIMIT { get => _maxCombinationLimit; }
-    
+
     [SerializeField]
     private GameMode _defaultGameMode = GameMode.SinglePlayer;
     public GameMode DEFAULT_GAME_MODE { get => _defaultGameMode; }
+
+    [SerializeField]
+    private Language _defaultLanguage = Language.Russian;
+    public Language DEFAULT_LANGUAGE { get => _defaultLanguage; }
 
     [SerializeField]
     private int _initialPlayerCoins = 0;

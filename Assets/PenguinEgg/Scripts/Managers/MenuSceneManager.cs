@@ -66,7 +66,7 @@ public class MenuSceneManager : Manager
     private SoundItem _sfxItem;
 
     [SerializeField]
-    private LanguageItem _language;
+    private LanguageItem _languageItem;
 
 
 
@@ -153,6 +153,8 @@ public class MenuSceneManager : Manager
 
         _sfxItem.SoundButton.onClick.AddListener(() => ToggleSFXVolume());
         _sfxItem.SoundButton.image.sprite = AudioManager.IsSFXMuted ? _sfxItem.MuteSprite : _sfxItem.UnmuteSprite;
+
+        _languageItem.LanguageButton.onClick.AddListener(() => ToggleLanguage());
     }
 
     private void ToggleMusicVolume()
@@ -167,6 +169,19 @@ public class MenuSceneManager : Manager
         _sfxItem.SoundButton.image.sprite = AudioManager.IsSFXMuted ? _sfxItem.MuteSprite : _sfxItem.UnmuteSprite;
     }
 
+    private void ToggleLanguage()
+    {
+        GameManager.Instance.ToggleLanguage();
+
+        if (GameManager.Language == Language.Russian)
+        {
+            _languageItem.LanguageButton.image.sprite = _languageItem.RussianSprite;
+        }
+        else
+        {
+            _languageItem.LanguageButton.image.sprite = _languageItem.EnglandSprite;
+        }
+    }
     
     private void DisplayParameters()
     {
