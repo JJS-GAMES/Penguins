@@ -62,12 +62,12 @@ public class GameManager : MonoBehaviour
 
         if (_isRussian)
         {
-            YG2.SwitchLanguage("ru");
+            YG2.lang = "ru";
             _language = Language.Russian;
         }
         else
         {
-            YG2.SwitchLanguage("en");
+            YG2.lang = "en";
             _language = Language.England;
         }
     }
