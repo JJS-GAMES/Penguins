@@ -50,6 +50,7 @@ public class PlayerActor : MonoBehaviour
         _playerResults.EggRetention = 0;
         _playerResults.CoinsSpent = 0;
         _playerResults.CombinationsSpent = 0;
+        
     }
 
     public void ReceiveCoin(int pricePerCombination)

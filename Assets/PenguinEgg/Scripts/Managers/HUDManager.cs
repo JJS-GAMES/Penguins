@@ -26,6 +26,12 @@ public class HUDManager : Manager
     private Image _player1Penguin;
 
     [SerializeField]
+    private GameObject _player1Steps;
+
+    [SerializeField]
+    private TextMeshProUGUI _player1StepsText;
+
+    [SerializeField]
     private TextMeshProUGUI _player1CoinText;
 
     [Header("Player 2")]
@@ -97,6 +103,9 @@ public class HUDManager : Manager
         _player2CoinText.text = "0";
         _player2Coin.SetActive(_currentGameMode == GameMode.MultiPlayer);
         _player2Penguin.gameObject.SetActive(_currentGameMode == GameMode.MultiPlayer);
+
+        _player1StepsText.text = GameManager.Instance.GameParameters.DEFAULT_STEPS_COUNT.ToString();
+        _player1Steps.SetActive(_currentGameMode == GameMode.SinglePlayer);
     }
 
     private void AdjustPowerUpLayout(RectTransform deactivatedButton)
@@ -118,10 +127,16 @@ public class HUDManager : Manager
 
     public void UpdatePlayerCoinText(float coin, int playerIndex)
     {
+
         if (playerIndex == 0)
             _player1CoinText.text = coin.ToString();
         else if (playerIndex == 1)
             _player2CoinText.text = coin.ToString();
+    }
+
+    public void UpdatePlayerStepsText(float steps)
+    {
+        _player1StepsText.text = steps.ToString();
     }
 
     public void StartEggCountdown(Sprite eggPlayerSprite, int countDownValue, int playerIndex)

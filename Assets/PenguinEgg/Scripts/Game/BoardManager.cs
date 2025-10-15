@@ -118,6 +118,8 @@ public class BoardManager : Manager
         else
         {
             yield return new WaitForSecondsRealtime(1.5f);
+
+            _gameSceneManager.SpendingSteps(1);
             _firstPressedTile.ResetTile();
             secondPressedTile.ResetTile();
         }
@@ -189,8 +191,7 @@ public class BoardManager : Manager
         if (parentA == parentB)
         {
             tileA.transform.SetSiblingIndex(indexB);
-            tileB.transform.SetSiblingIndex(indexA);
-        }
+            tileB.transform.SetSiblingIndex(indexA);        }
         else
         {
             tileA.transform.SetParent(null);
@@ -202,6 +203,7 @@ public class BoardManager : Manager
             tileA.transform.SetSiblingIndex(indexB);
             tileB.transform.SetSiblingIndex(indexA);
         }
+
 
         int logicIndexA = _tiles.IndexOf(tileA);
         int logicIndexB = _tiles.IndexOf(tileB);
@@ -240,7 +242,6 @@ public class BoardManager : Manager
         // Reset
         _gameSceneManager.UpdatePowerUpManager();
         _firstPressedTile = null;
-        OnEnableTileIfPossible.Invoke();
     }
 
     #endregion

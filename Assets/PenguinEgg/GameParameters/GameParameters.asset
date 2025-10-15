@@ -17,5 +17,7 @@ MonoBehaviour:
   _coinPerCombination: 2
   _eggSpawnTurn: 3
   _maxCombinationLimit: 9
+  _defaultStepsCount: 10
   _defaultGameMode: 1
+  _defaultLanguage: 0
   _initialPlayerCoins: 0

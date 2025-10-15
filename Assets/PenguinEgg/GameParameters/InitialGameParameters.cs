@@ -24,6 +24,10 @@ public class InitialGameParameters : ScriptableObject
     public int MAX_COMBINATION_LIMIT { get => _maxCombinationLimit; }
 
     [SerializeField]
+    private int _defaultStepsCount = 10;
+    public int DEFAULT_STEPS_COUNT { get => _defaultStepsCount; }
+
+    [SerializeField]
     private GameMode _defaultGameMode = GameMode.SinglePlayer;
     public GameMode DEFAULT_GAME_MODE { get => _defaultGameMode; }
 

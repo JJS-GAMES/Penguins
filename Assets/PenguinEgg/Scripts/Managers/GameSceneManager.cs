@@ -54,9 +54,14 @@ public class GameSceneManager : Manager
     private PlayerActor _currentPlayer;
     public PlayerActor CurrentPlayer => _currentPlayer;
 
+    // Current Steps Single Player
+
+    private int _currentSteps = 0;
+    public int CurrentSteps { get => _currentSteps; }
+
     // Current Egg Round
-    private int currentEggRound = 0;
-    public int CurrentRound => currentEggRound;
+    private int _currentEggRound = 0;
+    public int CurrentRound => _currentEggRound;
 
     #region Private Variables
 
@@ -85,6 +90,8 @@ public class GameSceneManager : Manager
         _currentPlayer = _player1;
         InitializeManagers();
         InitPlayers();
+
+        _currentSteps = GameManager.Instance.GameParameters.DEFAULT_STEPS_COUNT;
 
         _isInitialized = true;
     }
@@ -198,7 +205,7 @@ public class GameSceneManager : Manager
         if (!_currentPlayer.IsWarmimgEgg)
             return;
 
-        currentEggRound++;
+        _currentEggRound++;
         _currentPlayer.AddEggRetention();
         _hudManager.AddEggProgress();
         if (!isCombination)
@@ -210,7 +217,8 @@ public class GameSceneManager : Manager
                 ResetEgg();
         }
 
-        if (currentEggRound != _gameParameters.MAX_ROUNDS)
+
+        if (_currentEggRound != _gameParameters.MAX_ROUNDS)
             return;
 
         FinishGame();
@@ -263,6 +271,30 @@ public class GameSceneManager : Manager
 
         _player2.ReceiveCoin(_gameParameters.COIN_PER_COMBINATION);
     }
+
+    public void ReceiveSteps(int pricePerCombination)
+    {
+        if (_currentSteps <= 0 || _currentGameMode != GameMode.SinglePlayer) return;
+
+        _currentSteps += pricePerCombination;
+
+        _hudManager.UpdatePlayerStepsText(_currentSteps);
+    }
+
+    public void SpendingSteps(int pricePerCombination)
+    {
+        if (_currentGameMode != GameMode.SinglePlayer)
+            return;
+
+        _currentSteps -= pricePerCombination;
+        _hudManager.UpdatePlayerStepsText(_currentSteps);
+
+        if (_currentSteps <= 0)
+        {
+            FinishGame();
+        }
+    }
+
 
     #endregion
 
