@@ -90,7 +90,6 @@ public class GameSceneManager : Manager
         _currentPlayer = _player1;
         InitializeManagers();
         InitPlayers();
-
         _currentSteps = GameManager.Instance.GameParameters.DEFAULT_STEPS_COUNT;
 
         _isInitialized = true;
