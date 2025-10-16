@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
+using static UnityEngine.Rendering.DebugUI;
 
 public class HUDManager : Manager
 {
@@ -104,7 +106,20 @@ public class HUDManager : Manager
         _player2Coin.SetActive(_currentGameMode == GameMode.MultiPlayer);
         _player2Penguin.gameObject.SetActive(_currentGameMode == GameMode.MultiPlayer);
 
-        _player1StepsText.text = GameManager.Instance.GameParameters.DEFAULT_STEPS_COUNT.ToString();
+        string value = YG2.GetFlag("StepsCountFlag");
+
+        if (value == "hard")
+        {
+            _player1StepsText.text = GameManager.Instance.GameParameters.HARD_STEPS_COUNT.ToString();
+        }
+        else if (value == "easy")
+        {
+            _player1StepsText.text = GameManager.Instance.GameParameters.EASY_STEPS_COUNT.ToString();
+        }
+        else
+        {
+            _player1StepsText.text = GameManager.Instance.GameParameters.MEDIUM_STEPS_COUNT.ToString();
+        }
         _player1Steps.SetActive(_currentGameMode == GameMode.SinglePlayer);
     }
 

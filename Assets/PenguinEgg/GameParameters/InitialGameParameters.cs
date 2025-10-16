@@ -1,4 +1,5 @@
 using UnityEngine;
+using YG;
 
 [CreateAssetMenu(fileName = "AspectRatioConfig", menuName = "Game/Game Parameters", order = 1)]
 public class InitialGameParameters : ScriptableObject
@@ -24,8 +25,16 @@ public class InitialGameParameters : ScriptableObject
     public int MAX_COMBINATION_LIMIT { get => _maxCombinationLimit; }
 
     [SerializeField]
-    private int _defaultStepsCount = 10;
-    public int DEFAULT_STEPS_COUNT { get => _defaultStepsCount; }
+    private int _mediumStepsCount = 15;
+    public int MEDIUM_STEPS_COUNT { get => _mediumStepsCount; }
+
+    [SerializeField]
+    private int _hardStepsCount = 10;
+    public int HARD_STEPS_COUNT { get => _hardStepsCount; }
+
+    [SerializeField]
+    private int _easyStepsCount = 20;
+    public int EASY_STEPS_COUNT { get => _easyStepsCount; }
 
     [SerializeField]
     private GameMode _defaultGameMode = GameMode.SinglePlayer;

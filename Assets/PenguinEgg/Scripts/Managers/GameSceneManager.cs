@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 public class GameSceneManager : Manager
 {
@@ -90,7 +91,21 @@ public class GameSceneManager : Manager
         _currentPlayer = _player1;
         InitializeManagers();
         InitPlayers();
-        _currentSteps = GameManager.Instance.GameParameters.DEFAULT_STEPS_COUNT;
+
+        string value = YG2.GetFlag("StepsCountFlag");
+
+        if (value == "hard")
+        {
+            _currentSteps = GameManager.Instance.GameParameters.HARD_STEPS_COUNT;
+        }
+        else if (value == "easy")
+        {
+            _currentSteps = GameManager.Instance.GameParameters.EASY_STEPS_COUNT;
+        }
+        else
+        {
+            _currentSteps = GameManager.Instance.GameParameters.MEDIUM_STEPS_COUNT;
+        }
 
         _isInitialized = true;
     }
