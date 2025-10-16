@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 public class MenuSceneManager : Manager
 {
@@ -176,10 +177,12 @@ public class MenuSceneManager : Manager
         if (GameManager.Language == Language.Russian)
         {
             _languageItem.LanguageButton.image.sprite = _languageItem.RussianSprite;
+            YG2.SwitchLanguage("ru");
         }
         else
         {
             _languageItem.LanguageButton.image.sprite = _languageItem.EnglandSprite;
+            YG2.SwitchLanguage("en");
         }
     }
     
