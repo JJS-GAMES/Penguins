@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7706309079163302917}
   - component: {fileID: 5400170997015003490}
   - component: {fileID: 7746961276407162901}
+  - component: {fileID: 758472819114233151}
   - component: {fileID: 1788579860292728001}
   m_Layer: 5
   m_Name: RuleText
@@ -94,6 +95,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79494156201424901}
   m_CullTransparentMesh: 1
+--- !u!114 &758472819114233151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79494156201424901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u042D\u0442\u043E \u0443\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
+    \u043F\u043E\u043C\u0435\u043D\u044F\u0442\u044C \u043C\u0435\u0441\u0442\u0430\u043C\u0438
+    \u0434\u0432\u0435 \u0437\u0430\u043A\u0440\u044B\u0442\u044B\u0435 \u043A\u0430\u0440\u0442\u044B,
+    \u0430 \u0437\u0430\u0442\u0435\u043C \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+    \u0441\u0432\u043E\u0439 \u0445\u043E\u0434. \n\n\u041E\u043D\u043E \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0435\u0442
+    \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u0445\u043E\u0434\u0430."
+  _en: "This power-up allows you to swap 2 closed cards and then make your turn.\n\n
+    It is applied at the beginning of a turn"
 --- !u!114 &1788579860292728001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,11 +135,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This power-up allows you to swap 2 closed cards and then make your turn.
-    It is applied at the beginning of a turn
+  m_text: "\u042D\u0442\u043E \u0443\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
+    \u043F\u043E\u043C\u0435\u043D\u044F\u0442\u044C \u043C\u0435\u0441\u0442\u0430\u043C\u0438
+    \u0434\u0432\u0435 \u0437\u0430\u043A\u0440\u044B\u0442\u044B\u0435 \u043A\u0430\u0440\u0442\u044B,
+    \u0430 \u0437\u0430\u0442\u0435\u043C \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+    \u0441\u0432\u043E\u0439 \u0445\u043E\u0434. \n\n\u041E\u043D\u043E \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0435\u0442
+    \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u0445\u043E\u0434\u0430."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -142,7 +167,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.2
+  m_fontSize: 39.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1136,7 +1161,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: 410, y: 0}
+  m_SizeDelta: {x: 410, y: 102.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5450935213196237892
 CanvasRenderer:
@@ -1334,6 +1359,7 @@ GameObject:
   - component: {fileID: 952496946484149261}
   - component: {fileID: 6441821531575971542}
   - component: {fileID: 3647428203094340202}
+  - component: {fileID: 7742921356576071457}
   - component: {fileID: 4875885299331445669}
   m_Layer: 5
   m_Name: RuleText
@@ -1417,6 +1443,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3015725479816243024}
   m_CullTransparentMesh: 1
+--- !u!114 &7742921356576071457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3015725479816243024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u042D\u0442\u043E \u0443\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
+    \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u044F\u0439\u0446\u043E \u043D\u0430
+    \u043F\u043E\u043B\u0435, \u0434\u0430\u0436\u0435 \u0435\u0441\u043B\u0438 \u043E\u043D\u043E
+    \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0443 \u0438\u0433\u0440\u043E\u043A\u0430.\n\n\u041E\u043D\u043E
+    \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0435\u0442 \u043C\u0433\u043D\u043E\u0432\u0435\u043D\u043D\u043E,
+    \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0442\u044B \u043C\u043E\u0436\u0435\u0448\u044C
+    \u0437\u0430\u0432\u043B\u0430\u0434\u0435\u0442\u044C \u044F\u0439\u0446\u043E\u043C
+    \u0432 \u0442\u043E\u0442 \u0436\u0435 \u0445\u043E\u0434.\n\n\u042F\u0439\u0446\u043E
+    \u043F\u043E\u044F\u0432\u0438\u0442\u0441\u044F \u043D\u0430 \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E\u0439
+    \u0437\u0430\u043A\u0440\u044B\u0442\u043E\u0439 \u043A\u0430\u0440\u0442\u0435."
+  _en: "This power-up allows you to return the egg to the field when it is in the
+    player's possession.\n\nIt is applied immediately, which means that you can take
+    possession of the egg in the same turn. \n\nThe egg will appear on a random closed
+    card"
 --- !u!114 &4875885299331445669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1437,15 +1489,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This power-up allows you to return the egg to the field when it is in
-    the player''s possession.
-
-    It is applied immediately, which means that you
-    can take possession of the egg in the same turn. The egg will appear on a random
-    closed card'
+  m_text: "This power-up allows you to return the egg to the field when it is in
+    the player's possession.\n\nIt is applied immediately, which means that you can
+    take possession of the egg in the same turn. \n\nThe egg will appear on a random
+    closed card"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1469,7 +1519,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.8
+  m_fontSize: 29.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1594,6 +1644,7 @@ GameObject:
   - component: {fileID: 8352748197672676551}
   - component: {fileID: 1805363694069032698}
   - component: {fileID: 5724220944422088675}
+  - component: {fileID: 2244410317128987231}
   - component: {fileID: 2188742895050516438}
   m_Layer: 5
   m_Name: RuleText
@@ -1618,8 +1669,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 325.03}
-  m_SizeDelta: {x: 510, y: 518.45}
+  m_AnchoredPosition: {x: 0, y: 323.06973}
+  m_SizeDelta: {x: 510, y: 427.0394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1805363694069032698
 MeshRenderer:
@@ -1677,6 +1728,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3324325419297842568}
   m_CullTransparentMesh: 1
+--- !u!114 &2244410317128987231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3324325419297842568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u0422\u0432\u043E\u044F \u0437\u0430\u0434\u0430\u0447\u0430 - \u0432\u044B\u0440\u0430\u0441\u0442\u0438\u0442\u044C
+    \u044F\u0439\u0446\u043E. \n\n\u0427\u0442\u043E\u0431\u044B \u043E\u043D\u043E
+    \u0432\u044B\u043B\u0443\u043F\u0438\u043B\u043E\u0441\u044C, \u0435\u0433\u043E
+    \u043D\u0443\u0436\u043D\u043E \u0441\u043E\u0433\u0440\u0435\u0432\u0430\u0442\u044C
+    \u043D\u0430 \u043F\u0440\u043E\u0442\u044F\u0436\u0435\u043D\u0438\u0438 20
+    \u0445\u043E\u0434\u043E\u0432.\n\n\u041F\u043E\u0431\u0435\u0436\u0434\u0430\u0435\u0442
+    \u0442\u043E\u0442, \u043A\u0442\u043E \u043E\u043A\u0430\u0436\u0435\u0442\u0441\u044F
+    \u0441 \u043D\u0438\u043C \u0432 \u043C\u043E\u043C\u0435\u043D\u0442 \u0432\u044B\u043B\u0443\u043F\u043B\u0435\u043D\u0438\u044F.\n\n\u0414\u043B\u044F
+    \u0443\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u043D\u0430 \u044D\u043A\u0440\u0430\u043D\u0435
+    \u0431\u0443\u0434\u0435\u0442 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0442\u044C\u0441\u044F
+    \u0448\u043A\u0430\u043B\u0430 \u043F\u0440\u043E\u0433\u0440\u0435\u0432\u0430
+    \u044F\u0439\u0446\u0430."
+  _en: "Your task is to hatch the egg, for this you need to warm it for 20 moves,
+    and the winner is the one who will hatch it at the moment of hatching. \n\nFor
+    easy tracking, the egg warming scale will be displayed on the screen"
 --- !u!114 &2188742895050516438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1697,12 +1775,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your task is to hatch the egg, for this you need to warm it for 20 moves,
-    and the winner is the one who will hatch it at the moment of hatching. For easy
-    tracking, the egg warming scale will be displayed on the screen
+  m_text: "Your task is to hatch the egg, for this you need to warm it for 20 moves,
+    and the winner is the one who will hatch it at the moment of hatching. \n\nFor
+    easy tracking, the egg warming scale will be displayed on the screen"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1726,7 +1804,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 38.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2501,6 +2579,7 @@ GameObject:
   - component: {fileID: 2340099944019642806}
   - component: {fileID: 8769872386620246073}
   - component: {fileID: 7435918308148231012}
+  - component: {fileID: 5874142768008087870}
   - component: {fileID: 637205449930940376}
   m_Layer: 5
   m_Name: RuleText
@@ -2584,6 +2663,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5076159639541463486}
   m_CullTransparentMesh: 1
+--- !u!114 &5874142768008087870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5076159639541463486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u043D\u043D\u044B\u0435
+    \u043C\u043E\u043D\u0435\u0442\u044B \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0442\u0440\u0430\u0442\u0438\u0442\u044C
+    \u043D\u0430 \u043F\u043E\u043A\u0443\u043F\u043A\u0443 \u0443\u0441\u0438\u043B\u0435\u043D\u0438\u0439.\n\n\u041E\u043D\u0438
+    \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u0432 \u043D\u0438\u0436\u043D\u0435\u0439
+    \u0447\u0430\u0441\u0442\u0438 \u044D\u043A\u0440\u0430\u043D\u0430 \u0438 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u044B
+    \u043F\u043E\u0432\u043B\u0438\u044F\u0442\u044C \u043D\u0430 \u0438\u0441\u0445\u043E\u0434
+    \u0438\u0433\u0440\u044B."
+  _en: 'The money received can be spent on buying power-ups.
+
+
+    They are located
+    at the bottom of the screen and can affect the outcome of the game'
 --- !u!114 &637205449930940376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2606,13 +2709,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'The money received can be spent on buying power-ups.
 
-    They are located
-    at the bottom of the screen and can affect the outcome of the game
 
-'
+    They are located
+    at the bottom of the screen and can affect the outcome of the game'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2636,7 +2738,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.25
+  m_fontSize: 43.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2889,6 +2991,7 @@ GameObject:
   - component: {fileID: 1018159784423993928}
   - component: {fileID: 6885425357794312077}
   - component: {fileID: 7330249872270198246}
+  - component: {fileID: 6000937693410650854}
   - component: {fileID: 6320346941112506594}
   m_Layer: 5
   m_Name: RuleText
@@ -2972,6 +3075,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6133658733953738339}
   m_CullTransparentMesh: 1
+--- !u!114 &6000937693410650854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133658733953738339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u042D\u0442\u043E \u0443\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
+    \u043F\u043E\u0434\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0442\u043E\u0440\u0443\u044E
+    \u043A\u0430\u0440\u0442\u0443 \u0432 \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u0438.\n\n\u0427\u0442\u043E\u0431\u044B
+    \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0435\u0433\u043E,
+    \u043D\u0443\u0436\u043D\u043E, \u0447\u0442\u043E\u0431\u044B \u043E\u0434\u043D\u0430
+    \u0438\u0437 \u043A\u0430\u0440\u0442 \u0443\u0436\u0435 \u0431\u044B\u043B\u0430
+    \u043E\u0442\u043A\u0440\u044B\u0442\u0430."
+  _en: "This gain allows you to view the second card in the combination. \n\nTo apply,
+    you must have one of the cards open"
 --- !u!114 &6320346941112506594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2992,11 +3116,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This gain allows you to view the second card in the combination. To apply,
-    you must have one of the cards open
+  m_text: "This gain allows you to view the second card in the combination. \n\nTo
+    apply, you must have one of the cards open"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3020,7 +3144,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47
+  m_fontSize: 43.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3777,6 +3901,7 @@ GameObject:
   - component: {fileID: 4771517419142182280}
   - component: {fileID: 4231992232454203434}
   - component: {fileID: 1711386807921448185}
+  - component: {fileID: 154238062250811298}
   - component: {fileID: 7304642344177487227}
   m_Layer: 5
   m_Name: RuleText
@@ -3860,6 +3985,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6978230820728991376}
   m_CullTransparentMesh: 1
+--- !u!114 &154238062250811298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6978230820728991376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u0427\u0442\u043E\u0431\u044B \u043D\u0435 \u043F\u043E\u0442\u0435\u0440\u044F\u0442\u044C
+    \u044F\u0439\u0446\u043E, \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F \u0441\u043E\u0431\u0438\u0440\u0430\u0442\u044C
+    \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u0438.\n\n\u041A\u0430\u043A
+    \u0442\u043E\u043B\u044C\u043A\u043E \u043D\u0430 \u043F\u043E\u043B\u0435 \u0431\u0443\u0434\u0435\u0442
+    \u0441\u043E\u0431\u0440\u0430\u043D\u043E 5 \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u0439,
+    \u043A\u0430\u0440\u0442\u044B \u0441\u043D\u043E\u0432\u0430 \u0441\u0442\u0430\u043D\u0443\u0442
+    \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u043C\u0438, \u0430 \u0438\u0433\u0440\u043E\u043A\u0438
+    \u043F\u043E\u043B\u0443\u0447\u0430\u0442 \u043F\u043E 2 \u043C\u043E\u043D\u0435\u0442\u044B
+    \u0437\u0430 \u043A\u0430\u0436\u0434\u0443\u044E \u0441\u043E\u0431\u0440\u0430\u043D\u043D\u0443\u044E
+    \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u044E."
+  _en: In order not to lose the egg, you will have to make combinations, as soon
+    as 5 combinations are made on the field, the cards will become active again,
+    and players will receive 2 coins for each combination they collect
 --- !u!114 &7304642344177487227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3884,8 +4034,8 @@ MonoBehaviour:
     as 5 combinations are made on the field, the cards will become active again,
     and players will receive 2 coins for each combination they collect
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3909,7 +4059,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.6
+  m_fontSize: 39.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4159,6 +4309,7 @@ GameObject:
   - component: {fileID: 4425283779393003242}
   - component: {fileID: 2747012012523699432}
   - component: {fileID: 8290845700509217657}
+  - component: {fileID: 9132206404718739471}
   - component: {fileID: 4496939110654443154}
   m_Layer: 5
   m_Name: RuleText
@@ -4242,6 +4393,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7065638522671408409}
   m_CullTransparentMesh: 1
+--- !u!114 &9132206404718739471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7065638522671408409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u0427\u0442\u043E\u0431\u044B \u043D\u0430\u0447\u0430\u0442\u044C \u0432\u044B\u0441\u0438\u0436\u0438\u0432\u0430\u0442\u044C
+    \u044F\u0439\u0446\u043E, \u043D\u0443\u0436\u043D\u043E \u0441\u043E\u0431\u0440\u0430\u0442\u044C
+    \u043A\u0430\u0440\u0442\u0443, \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u043E\u0439
+    \u043E\u043D\u043E \u043B\u0435\u0436\u0438\u0442 - \u0442\u043E\u0433\u0434\u0430
+    \u0442\u0432\u043E\u0439 \u043F\u0438\u043D\u0433\u0432\u0438\u043D \u043D\u0430\u0447\u043D\u0451\u0442
+    \u0435\u0433\u043E \u0441\u043E\u0433\u0440\u0435\u0432\u0430\u0442\u044C!\n\n\u041D\u043E
+    \u0431\u0443\u0434\u044C \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D:
+    \u0435\u0441\u043B\u0438 \u0442\u0440\u0438\u0436\u0434\u044B \u043F\u043E\u0434\u0440\u044F\u0434
+    \u043D\u0435 \u0441\u043E\u0431\u0435\u0440\u0451\u0448\u044C \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u044E,
+    \u044F\u0439\u0446\u043E \u0432\u0435\u0440\u043D\u0451\u0442\u0441\u044F \u043E\u0431\u0440\u0430\u0442\u043D\u043E
+    \u043D\u0430 \u043F\u043E\u043B\u0435."
+  _en: "To start hatching an egg, you need to collect the card on which it is located,
+    then your penguin begins to warm it! \n\nBut be careful, as soon as you do not
+    collect the combination three times in a turn, the egg will be back on the field"
 --- !u!114 &4496939110654443154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4262,12 +4439,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To start hatching an egg, you need to collect the card on which it is located,
-    then your penguin begins to warm it! But be careful, as soon as you do not collect
-    the combination three times in a turn, the egg will be back on the field
+  m_text: "To start hatching an egg, you need to collect the card on which it is
+    located, then your penguin begins to warm it! \n\nBut be careful, as soon as
+    you do not collect the combination three times in a turn, the egg will be back
+    on the field"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4291,7 +4469,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.8
+  m_fontSize: 34.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4346,6 +4524,7 @@ GameObject:
   - component: {fileID: 8861652038922284568}
   - component: {fileID: 4202018711417488682}
   - component: {fileID: 1445230818628007346}
+  - component: {fileID: 1287838762599193529}
   - component: {fileID: 298545659522178249}
   m_Layer: 5
   m_Name: RuleText
@@ -4429,6 +4608,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7100751047360603620}
   m_CullTransparentMesh: 1
+--- !u!114 &1287838762599193529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100751047360603620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u042D\u0442\u043E \u0443\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
+    \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u043B\u0438\u043C\u0438\u0442
+    \u0441\u043E\u0431\u0440\u0430\u043D\u043D\u044B\u0445 \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u0439,
+    \u0447\u0442\u043E\u0431\u044B \u043A\u0430\u0440\u0442\u044B \u043D\u0430 \u043F\u043E\u043B\u0435
+    \u043E\u0431\u043D\u043E\u0432\u043B\u044F\u043B\u0438\u0441\u044C \u0440\u0435\u0436\u0435.\n\n\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u0435\u0442\u0441\u044F
+    \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u0441\u0432\u043E\u0435\u0433\u043E
+    \u0445\u043E\u0434\u0430.\n\n\u0418\u0437\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u043E
+    \u043B\u0438\u043C\u0438\u0442 - 5 \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u0439,
+    \u043C\u0430\u043A\u0441\u0438\u043C\u0443\u043C - 9."
+  _en: "This power-up allows you to increase the limit of collected combinations,
+    so that the cards on the field are updated less often.\n\n Used during its turn.
+    \n\nThe initial number is 5 combinations, the maximum is 9."
 --- !u!114 &298545659522178249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4449,12 +4652,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This power-up allows you to increase the limit of collected combinations,
-    so that the cards on the field are updated less often. Used during its turn.
-    The initial number is 5 combinations, the maximum is 9
+  m_text: "This power-up allows you to increase the limit of collected combinations,
+    so that the cards on the field are updated less often.\n\n Used during its turn.
+    \n\nThe initial number is 5 combinations, the maximum is 9."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4478,7 +4681,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.9
+  m_fontSize: 31.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4850,7 +5053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2293610344081591876
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5092,7 +5295,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 3
@@ -5477,6 +5680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9083782856490432302}
   - component: {fileID: 3732634672835591390}
+  - component: {fileID: 3495222224276678241}
   - component: {fileID: 1794226466139559683}
   m_Layer: 5
   m_Name: RulesTitle
@@ -5502,7 +5706,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2.1793, y: 2.1793}
-  m_SizeDelta: {x: 278.454, y: 117.5576}
+  m_SizeDelta: {x: 350, y: 117.5576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3732634672835591390
 CanvasRenderer:
@@ -5512,6 +5716,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9088438258834680689}
   m_CullTransparentMesh: 1
+--- !u!114 &3495222224276678241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088438258834680689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9db1647b0193242be02ea3820f6e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YG.Example.LanguageExample
+  _ru: "\u041F\u0440\u0430\u0432\u0438\u043B\u0430"
+  _en: Rules
 --- !u!114 &1794226466139559683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5534,8 +5752,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rules
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
-  m_sharedMaterial: {fileID: -6676099201404183077, guid: 405c6bf64cc1a4b44bb895ea52508edc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
+  m_sharedMaterial: {fileID: -6915849091998845779, guid: c780384f3a2eab74ba81b5ef20838eab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
